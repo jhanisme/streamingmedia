@@ -1,9 +1,38 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+  background-color: #020659;
+}
+
+body{
+  max-width: 834px;
+  margin: auto;
+}
+
+h1 {
+  font-size:1.25em;
+}
+
+h2, h3 {
+  font-size: 1em;
+  color: white;
+}
+
+p, dl, dd {
+  font-size: 1em;
+  color: white;
+}
+
+footer p {
+  font-size: .75em;
+}
+
 .header {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
+    background-color: #020873;
     width: 100%;
     z-index: 3;
+
   }
   
   .header ul {
@@ -11,31 +40,30 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #020873;
   }
   
   .header li a {
+    color: white;
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
     text-decoration: none;
   }
+
+  .page-title {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    color: white; 
+    padding: 10px 20px; 
+    display: block; 
+}
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #590242;
   }
-  
-  .header .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
+
   /* menu */
-  
   .header .menu {
     clear: both;
     max-height: 0;
@@ -43,7 +71,6 @@
   }
   
   /* menu icon */
-  
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -54,7 +81,7 @@
   }
   
   .header .menu-icon .navicon {
-    background: #333;
+    background: white;
     display: block;
     height: 2px;
     position: relative;
@@ -64,7 +91,7 @@
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -108,26 +135,30 @@
     top: 0;
   }
   
-  ul li:first-child {
-    font-variant: small-caps;
-}
-  /* 48em = 768px */
   
   @media (min-width: 834px) {
-    .header li {
-      float: left;
-    }
+   
     .header li a {
       padding: 20px 30px;
+      justify-items: center;
+      margin: auto;
     }
     .header .menu {
       clear: none;
-      float: left;
       max-height: none;
     }
     .header .menu-icon {
       display: none;
     }
+     ul {
+      overflow: visible;
+      top: 0;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  label span, input {
+      display: none;
+  }
   }
   
   
